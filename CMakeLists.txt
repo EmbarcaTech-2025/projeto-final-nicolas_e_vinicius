@@ -35,8 +35,12 @@ project(${ProjectName} C CXX ASM)
 pico_sdk_init()
 
 add_executable(${ProjectName}
-   app/main.c
+   core/main.c
+   utilities/neopixel.c
+   tasks/led_task.c
 )
+ 
+pico_generate_pio_header(smart_light ${CMAKE_CURRENT_LIST_DIR}/utilities/include/ws2812b.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(${ProjectName} 0)
@@ -45,10 +49,14 @@ pico_enable_stdio_usb(${ProjectName} 1)
 target_include_directories(${ProjectName} PRIVATE
    ${CMAKE_CURRENT_LIST_DIR}
    ${CMAKE_CURRENT_LIST_DIR}/inc
-   ${CMAKE_CURRENT_LIST_DIR}/app
+   ${CMAKE_CURRENT_LIST_DIR}/core
+   ${CMAKE_CURRENT_LIST_DIR}/utilities/include
    ${FREERTOS_PATH}/include
    ${FREERTOS_PATH}/portable/ThirdParty/GCC/RP2040
 )
+
+pico_set_program_name(${ProjectName} "smart_light")
+pico_set_program_version(${ProjectName} "0.1")
 
 target_link_libraries(${ProjectName}
    pico_stdlib
@@ -60,6 +68,8 @@ target_link_libraries(${ProjectName}
    hardware_pwm 
    hardware_gpio
    hardware_i2c
+   hardware_pio
+   hardware_clocks
    )
 
 pico_add_extra_outputs(${ProjectName})

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "neopixel.h": "c",
+        "stdlib.h": "c",
+        "led_task.h": "c",
+        "task.h": "c",
+        "ws2812b.pio.h": "c",
+        "stdio.h": "c",
+        "math.h": "c"
+    }
+}
