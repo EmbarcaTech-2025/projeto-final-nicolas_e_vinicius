@@ -2346,6 +2346,78 @@ tasks/led_task.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/led_task.c.s
 .PHONY : tasks/led_task.c.s
 
+tasks/sensor_task.o: tasks/sensor_task.c.o
+.PHONY : tasks/sensor_task.o
+
+# target to build an object file
+tasks/sensor_task.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/sensor_task.c.o
+.PHONY : tasks/sensor_task.c.o
+
+tasks/sensor_task.i: tasks/sensor_task.c.i
+.PHONY : tasks/sensor_task.i
+
+# target to preprocess a source file
+tasks/sensor_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/sensor_task.c.i
+.PHONY : tasks/sensor_task.c.i
+
+tasks/sensor_task.s: tasks/sensor_task.c.s
+.PHONY : tasks/sensor_task.s
+
+# target to generate assembly for a file
+tasks/sensor_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/sensor_task.c.s
+.PHONY : tasks/sensor_task.c.s
+
+utilities/cpp_vl53l0x/VL53L0X.o: utilities/cpp_vl53l0x/VL53L0X.cpp.o
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.o
+
+# target to build an object file
+utilities/cpp_vl53l0x/VL53L0X.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.cpp.o
+
+utilities/cpp_vl53l0x/VL53L0X.i: utilities/cpp_vl53l0x/VL53L0X.cpp.i
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.i
+
+# target to preprocess a source file
+utilities/cpp_vl53l0x/VL53L0X.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.i
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.cpp.i
+
+utilities/cpp_vl53l0x/VL53L0X.s: utilities/cpp_vl53l0x/VL53L0X.cpp.s
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.s
+
+# target to generate assembly for a file
+utilities/cpp_vl53l0x/VL53L0X.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.s
+.PHONY : utilities/cpp_vl53l0x/VL53L0X.cpp.s
+
+utilities/cpp_vl53l0x/vl53l0x_wrapper.o: utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.o
+
+# target to build an object file
+utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o
+
+utilities/cpp_vl53l0x/vl53l0x_wrapper.i: utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.i
+
+# target to preprocess a source file
+utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i
+
+utilities/cpp_vl53l0x/vl53l0x_wrapper.s: utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.s
+
+# target to generate assembly for a file
+utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s
+.PHONY : utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s
+
 utilities/neopixel.o: utilities/neopixel.c.o
 .PHONY : utilities/neopixel.o
 
@@ -2653,6 +2725,15 @@ help:
 	@echo "... tasks/led_task.o"
 	@echo "... tasks/led_task.i"
 	@echo "... tasks/led_task.s"
+	@echo "... tasks/sensor_task.o"
+	@echo "... tasks/sensor_task.i"
+	@echo "... tasks/sensor_task.s"
+	@echo "... utilities/cpp_vl53l0x/VL53L0X.o"
+	@echo "... utilities/cpp_vl53l0x/VL53L0X.i"
+	@echo "... utilities/cpp_vl53l0x/VL53L0X.s"
+	@echo "... utilities/cpp_vl53l0x/vl53l0x_wrapper.o"
+	@echo "... utilities/cpp_vl53l0x/vl53l0x_wrapper.i"
+	@echo "... utilities/cpp_vl53l0x/vl53l0x_wrapper.s"
 	@echo "... utilities/neopixel.o"
 	@echo "... utilities/neopixel.i"
 	@echo "... utilities/neopixel.s"

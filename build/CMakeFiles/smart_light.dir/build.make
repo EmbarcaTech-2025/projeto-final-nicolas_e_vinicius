@@ -97,10 +97,38 @@ CMakeFiles/smart_light.dir/utilities/neopixel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_light.dir/utilities/neopixel.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/neopixel.c -o CMakeFiles/smart_light.dir/utilities/neopixel.c.s
 
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o: CMakeFiles/smart_light.dir/flags.make
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o: ../utilities/cpp_vl53l0x/VL53L0X.cpp
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o: CMakeFiles/smart_light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o -MF CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o.d -o CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/VL53L0X.cpp
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/VL53L0X.cpp > CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.i
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/VL53L0X.cpp -o CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.s
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o: CMakeFiles/smart_light.dir/flags.make
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o: ../utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o: CMakeFiles/smart_light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o -MF CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o.d -o CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp > CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.i
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp -o CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s
+
 CMakeFiles/smart_light.dir/tasks/led_task.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/tasks/led_task.c.o: ../tasks/led_task.c
 CMakeFiles/smart_light.dir/tasks/led_task.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/smart_light.dir/tasks/led_task.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/smart_light.dir/tasks/led_task.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/tasks/led_task.c.o -MF CMakeFiles/smart_light.dir/tasks/led_task.c.o.d -o CMakeFiles/smart_light.dir/tasks/led_task.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/led_task.c
 
 CMakeFiles/smart_light.dir/tasks/led_task.c.i: cmake_force
@@ -111,10 +139,24 @@ CMakeFiles/smart_light.dir/tasks/led_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_light.dir/tasks/led_task.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/led_task.c -o CMakeFiles/smart_light.dir/tasks/led_task.c.s
 
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: CMakeFiles/smart_light.dir/flags.make
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: ../tasks/sensor_task.c
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/smart_light.dir/tasks/sensor_task.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/tasks/sensor_task.c.o -MF CMakeFiles/smart_light.dir/tasks/sensor_task.c.o.d -o CMakeFiles/smart_light.dir/tasks/sensor_task.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/sensor_task.c
+
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_light.dir/tasks/sensor_task.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/sensor_task.c > CMakeFiles/smart_light.dir/tasks/sensor_task.c.i
+
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_light.dir/tasks/sensor_task.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/sensor_task.c -o CMakeFiles/smart_light.dir/tasks/sensor_task.c.s
+
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_plat
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -198,7 +240,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -212,7 +254,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -225,7 +267,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -239,7 +281,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i: cmake_force
@@ -253,7 +295,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -267,7 +309,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i: cmake_force
@@ -281,7 +323,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -295,7 +337,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i: cmake_force
@@ -309,7 +351,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -323,7 +365,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -337,7 +379,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i: cmake_force
@@ -351,7 +393,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i: cmake_force
@@ -365,7 +407,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i: cmake_force
@@ -379,7 +421,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -393,7 +435,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -407,7 +449,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -421,7 +463,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -435,7 +477,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -449,7 +491,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -463,7 +505,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -477,7 +519,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -491,7 +533,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -505,7 +547,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -519,7 +561,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -532,7 +574,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -546,7 +588,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -560,7 +602,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -574,7 +616,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -588,7 +630,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -601,7 +643,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -614,7 +656,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -627,7 +669,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -641,7 +683,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -655,7 +697,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -668,7 +710,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -681,7 +723,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -694,7 +736,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -708,7 +750,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -722,7 +764,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -735,7 +777,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -749,7 +791,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -762,7 +804,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -776,7 +818,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -790,7 +832,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -804,7 +846,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -818,7 +860,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -831,7 +873,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building ASM object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o   -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -845,7 +887,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -859,7 +901,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -873,7 +915,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -887,7 +929,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -901,7 +943,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -915,7 +957,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -929,7 +971,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -943,7 +985,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -957,7 +999,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -971,7 +1013,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/port
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -985,7 +1027,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/port
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -999,7 +1041,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/devi
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1013,7 +1055,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/devi
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1027,7 +1069,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1041,7 +1083,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1055,7 +1097,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1069,7 +1111,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1083,7 +1125,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1097,7 +1139,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1111,7 +1153,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1125,7 +1167,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1139,7 +1181,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1153,7 +1195,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1167,7 +1209,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1181,7 +1223,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/clas
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1195,7 +1237,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1209,7 +1251,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/comm
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1223,7 +1265,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o: ../FreeRTOS-Kernel/portable/MemMang/heap_4.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/portable/MemMang/heap_4.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.i: cmake_force
@@ -1237,7 +1279,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.s: cmake_fo
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.i: cmake_force
@@ -1251,7 +1293,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o: ../FreeRTOS-Kernel/croutine.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/croutine.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.i: cmake_force
@@ -1265,7 +1307,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/croutine.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o: ../FreeRTOS-Kernel/event_groups.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/event_groups.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.i: cmake_force
@@ -1279,7 +1321,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/event_groups.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o: ../FreeRTOS-Kernel/list.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/list.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.i: cmake_force
@@ -1293,7 +1335,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/list.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o: ../FreeRTOS-Kernel/queue.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/queue.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.i: cmake_force
@@ -1307,7 +1349,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/queue.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o: ../FreeRTOS-Kernel/stream_buffer.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/stream_buffer.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.i: cmake_force
@@ -1321,7 +1363,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/stream_buffer.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o: ../FreeRTOS-Kernel/tasks.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/tasks.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.i: cmake_force
@@ -1335,7 +1377,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/tasks.c.s: cmake_force
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o: ../FreeRTOS-Kernel/timers.c
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o -MF CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o.d -o CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/timers.c
 
 CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.i: cmake_force
@@ -1349,7 +1391,7 @@ CMakeFiles/smart_light.dir/FreeRTOS-Kernel/timers.c.s: cmake_force
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1363,7 +1405,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1377,7 +1419,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.i: cmake_force
@@ -1391,7 +1433,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -1405,7 +1447,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1419,7 +1461,7 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o -c /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1434,7 +1476,10 @@ CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardw
 smart_light_OBJECTS = \
 "CMakeFiles/smart_light.dir/core/main.c.o" \
 "CMakeFiles/smart_light.dir/utilities/neopixel.c.o" \
+"CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o" \
+"CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o" \
 "CMakeFiles/smart_light.dir/tasks/led_task.c.o" \
+"CMakeFiles/smart_light.dir/tasks/sensor_task.c.o" \
 "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o" \
@@ -1536,7 +1581,10 @@ smart_light_EXTERNAL_OBJECTS =
 
 smart_light.elf: CMakeFiles/smart_light.dir/core/main.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/utilities/neopixel.c.o
+smart_light.elf: CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o
+smart_light.elf: CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o
 smart_light.elf: CMakeFiles/smart_light.dir/tasks/led_task.c.o
+smart_light.elf: CMakeFiles/smart_light.dir/tasks/sensor_task.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o
@@ -1636,7 +1684,7 @@ smart_light.elf: CMakeFiles/smart_light.dir/build.make
 smart_light.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 smart_light.elf: /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 smart_light.elf: CMakeFiles/smart_light.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking CXX executable smart_light.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Linking CXX executable smart_light.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smart_light.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/smart_light.elf > smart_light.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/smart_light.elf >> smart_light.dis

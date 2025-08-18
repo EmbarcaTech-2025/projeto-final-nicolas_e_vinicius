@@ -72,6 +72,9 @@ CMakeFiles/smart_light.dir/core/main.c.o: \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+ /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+ /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+ /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/FreeRTOS.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/projdefs.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/portable.h \
@@ -82,4 +85,6 @@ CMakeFiles/smart_light.dir/core/main.c.o: \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/mpu_wrappers.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/task.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/list.h \
- /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/led_task.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/led_task.h \
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/sensor_task.h \
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/vl53l0x_wrapper.h

@@ -37,7 +37,10 @@ pico_sdk_init()
 add_executable(${ProjectName}
    core/main.c
    utilities/neopixel.c
+   utilities/cpp_vl53l0x/VL53L0X.cpp
+   utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp
    tasks/led_task.c
+   tasks/sensor_task.c
 )
  
 pico_generate_pio_header(smart_light ${CMAKE_CURRENT_LIST_DIR}/utilities/include/ws2812b.pio)
@@ -51,6 +54,7 @@ target_include_directories(${ProjectName} PRIVATE
    ${CMAKE_CURRENT_LIST_DIR}/inc
    ${CMAKE_CURRENT_LIST_DIR}/core
    ${CMAKE_CURRENT_LIST_DIR}/utilities/include
+   ${CMAKE_CURRENT_LIST_DIR}/utilities/cpp_vl53l0x
    ${FREERTOS_PATH}/include
    ${FREERTOS_PATH}/portable/ThirdParty/GCC/RP2040
 )

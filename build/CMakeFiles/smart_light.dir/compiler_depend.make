@@ -604,6 +604,9 @@ CMakeFiles/smart_light.dir/core/main.c.o: ../core/main.c \
   /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
   /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
   /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
   ../FreeRTOS-Kernel/include/FreeRTOS.h \
   ../FreeRTOS-Kernel/include/projdefs.h \
   ../FreeRTOS-Kernel/include/portable.h \
@@ -614,7 +617,9 @@ CMakeFiles/smart_light.dir/core/main.c.o: ../core/main.c \
   ../FreeRTOS-Kernel/include/mpu_wrappers.h \
   ../FreeRTOS-Kernel/include/task.h \
   ../FreeRTOS-Kernel/include/list.h \
-  ../inc/led_task.h
+  ../inc/led_task.h \
+  ../inc/sensor_task.h \
+  ../utilities/include/vl53l0x_wrapper.h
 
 CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c \
   /home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb_option.h \
@@ -4887,6 +4892,502 @@ CMakeFiles/smart_light.dir/tasks/led_task.c.o: ../tasks/led_task.c \
   ../inc/led_task.h \
   ../utilities/include/neopixel.h
 
+CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: ../tasks/sensor_task.c \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+  generated/pico_base/pico/version.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  ../inc/FreeRTOSConfig.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/nvic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  ../FreeRTOS-Kernel/include/FreeRTOS.h \
+  ../FreeRTOS-Kernel/include/projdefs.h \
+  ../FreeRTOS-Kernel/include/portable.h \
+  ../FreeRTOS-Kernel/include/deprecated_definitions.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/portmacro.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
+  ../FreeRTOS-Kernel/include/mpu_wrappers.h \
+  ../FreeRTOS-Kernel/include/task.h \
+  ../FreeRTOS-Kernel/include/list.h \
+  ../utilities/include/vl53l0x_wrapper.h \
+  ../inc/sensor_task.h
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o: ../utilities/cpp_vl53l0x/VL53L0X.cpp \
+  ../utilities/cpp_vl53l0x/VL53L0X.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
+  /usr/include/newlib/c++/12.2.1/cassert \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
+  /usr/include/newlib/c++/12.2.1/pstl/pstl_config.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  ../inc/FreeRTOSConfig.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/nvic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /usr/include/newlib/c++/12.2.1/cstdio \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/c++/12.2.1/iostream \
+  /usr/include/newlib/c++/12.2.1/ostream \
+  /usr/include/newlib/c++/12.2.1/ios \
+  /usr/include/newlib/c++/12.2.1/iosfwd \
+  /usr/include/newlib/c++/12.2.1/bits/stringfwd.h \
+  /usr/include/newlib/c++/12.2.1/bits/memoryfwd.h \
+  /usr/include/newlib/c++/12.2.1/bits/postypes.h \
+  /usr/include/newlib/c++/12.2.1/cwchar \
+  /usr/include/newlib/wchar.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/c++/12.2.1/exception \
+  /usr/include/newlib/c++/12.2.1/bits/exception.h \
+  /usr/include/newlib/c++/12.2.1/bits/exception_ptr.h \
+  /usr/include/newlib/c++/12.2.1/bits/exception_defines.h \
+  /usr/include/newlib/c++/12.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/newlib/c++/12.2.1/typeinfo \
+  /usr/include/newlib/c++/12.2.1/bits/hash_bytes.h \
+  /usr/include/newlib/c++/12.2.1/new \
+  /usr/include/newlib/c++/12.2.1/bits/move.h \
+  /usr/include/newlib/c++/12.2.1/type_traits \
+  /usr/include/newlib/c++/12.2.1/bits/nested_exception.h \
+  /usr/include/newlib/c++/12.2.1/bits/char_traits.h \
+  /usr/include/newlib/c++/12.2.1/cstdint \
+  /usr/include/newlib/c++/12.2.1/bits/localefwd.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++locale.h \
+  /usr/include/newlib/c++/12.2.1/clocale \
+  /usr/include/newlib/locale.h \
+  /usr/include/newlib/c++/12.2.1/cctype \
+  /usr/include/newlib/ctype.h \
+  /usr/include/newlib/c++/12.2.1/bits/ios_base.h \
+  /usr/include/newlib/c++/12.2.1/ext/atomicity.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr-default.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/atomic_word.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_classes.h \
+  /usr/include/newlib/c++/12.2.1/string \
+  /usr/include/newlib/c++/12.2.1/bits/allocator.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++allocator.h \
+  /usr/include/newlib/c++/12.2.1/bits/new_allocator.h \
+  /usr/include/newlib/c++/12.2.1/bits/functexcept.h \
+  /usr/include/newlib/c++/12.2.1/bits/cpp_type_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/ostream_insert.h \
+  /usr/include/newlib/c++/12.2.1/bits/cxxabi_forced.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/newlib/c++/12.2.1/bits/concept_check.h \
+  /usr/include/newlib/c++/12.2.1/debug/assertions.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator.h \
+  /usr/include/newlib/c++/12.2.1/ext/type_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/ptr_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_function.h \
+  /usr/include/newlib/c++/12.2.1/backward/binders.h \
+  /usr/include/newlib/c++/12.2.1/ext/numeric_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_algobase.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_pair.h \
+  /usr/include/newlib/c++/12.2.1/bits/utility.h \
+  /usr/include/newlib/c++/12.2.1/debug/debug.h \
+  /usr/include/newlib/c++/12.2.1/bits/predefined_ops.h \
+  /usr/include/newlib/c++/12.2.1/bits/refwrap.h \
+  /usr/include/newlib/c++/12.2.1/bits/invoke.h \
+  /usr/include/newlib/c++/12.2.1/bits/range_access.h \
+  /usr/include/newlib/c++/12.2.1/initializer_list \
+  /usr/include/newlib/c++/12.2.1/bits/basic_string.h \
+  /usr/include/newlib/c++/12.2.1/ext/alloc_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/alloc_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_construct.h \
+  /usr/include/newlib/c++/12.2.1/string_view \
+  /usr/include/newlib/c++/12.2.1/bits/functional_hash.h \
+  /usr/include/newlib/c++/12.2.1/bits/string_view.tcc \
+  /usr/include/newlib/c++/12.2.1/ext/string_conversions.h \
+  /usr/include/newlib/c++/12.2.1/cstdlib \
+  /usr/include/newlib/c++/12.2.1/stdlib.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /usr/include/newlib/c++/12.2.1/bits/std_abs.h \
+  /usr/include/newlib/c++/12.2.1/cerrno \
+  /usr/include/newlib/errno.h \
+  /usr/include/newlib/sys/errno.h \
+  /usr/include/newlib/c++/12.2.1/bits/charconv.h \
+  /usr/include/newlib/c++/12.2.1/bits/basic_string.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/locale_classes.tcc \
+  /usr/include/newlib/c++/12.2.1/system_error \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/error_constants.h \
+  /usr/include/newlib/c++/12.2.1/stdexcept \
+  /usr/include/newlib/c++/12.2.1/streambuf \
+  /usr/include/newlib/c++/12.2.1/bits/streambuf.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/basic_ios.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_facets.h \
+  /usr/include/newlib/c++/12.2.1/cwctype \
+  /usr/include/newlib/wctype.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_base.h \
+  /usr/include/newlib/c++/12.2.1/bits/streambuf_iterator.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_inline.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_facets.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/basic_ios.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/ostream.tcc \
+  /usr/include/newlib/c++/12.2.1/istream \
+  /usr/include/newlib/c++/12.2.1/bits/istream.tcc \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h
+
+CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o: ../utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp \
+  ../utilities/cpp_vl53l0x/VL53L0X.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
+  /usr/include/newlib/c++/12.2.1/cassert \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
+  /usr/include/newlib/c++/12.2.1/pstl/pstl_config.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  ../inc/FreeRTOSConfig.h \
+  ../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/nvic.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /usr/include/newlib/c++/12.2.1/cstdio \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/c++/12.2.1/iostream \
+  /usr/include/newlib/c++/12.2.1/ostream \
+  /usr/include/newlib/c++/12.2.1/ios \
+  /usr/include/newlib/c++/12.2.1/iosfwd \
+  /usr/include/newlib/c++/12.2.1/bits/stringfwd.h \
+  /usr/include/newlib/c++/12.2.1/bits/memoryfwd.h \
+  /usr/include/newlib/c++/12.2.1/bits/postypes.h \
+  /usr/include/newlib/c++/12.2.1/cwchar \
+  /usr/include/newlib/wchar.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/c++/12.2.1/exception \
+  /usr/include/newlib/c++/12.2.1/bits/exception.h \
+  /usr/include/newlib/c++/12.2.1/bits/exception_ptr.h \
+  /usr/include/newlib/c++/12.2.1/bits/exception_defines.h \
+  /usr/include/newlib/c++/12.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/newlib/c++/12.2.1/typeinfo \
+  /usr/include/newlib/c++/12.2.1/bits/hash_bytes.h \
+  /usr/include/newlib/c++/12.2.1/new \
+  /usr/include/newlib/c++/12.2.1/bits/move.h \
+  /usr/include/newlib/c++/12.2.1/type_traits \
+  /usr/include/newlib/c++/12.2.1/bits/nested_exception.h \
+  /usr/include/newlib/c++/12.2.1/bits/char_traits.h \
+  /usr/include/newlib/c++/12.2.1/cstdint \
+  /usr/include/newlib/c++/12.2.1/bits/localefwd.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++locale.h \
+  /usr/include/newlib/c++/12.2.1/clocale \
+  /usr/include/newlib/locale.h \
+  /usr/include/newlib/c++/12.2.1/cctype \
+  /usr/include/newlib/ctype.h \
+  /usr/include/newlib/c++/12.2.1/bits/ios_base.h \
+  /usr/include/newlib/c++/12.2.1/ext/atomicity.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr-default.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/atomic_word.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_classes.h \
+  /usr/include/newlib/c++/12.2.1/string \
+  /usr/include/newlib/c++/12.2.1/bits/allocator.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++allocator.h \
+  /usr/include/newlib/c++/12.2.1/bits/new_allocator.h \
+  /usr/include/newlib/c++/12.2.1/bits/functexcept.h \
+  /usr/include/newlib/c++/12.2.1/bits/cpp_type_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/ostream_insert.h \
+  /usr/include/newlib/c++/12.2.1/bits/cxxabi_forced.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/newlib/c++/12.2.1/bits/concept_check.h \
+  /usr/include/newlib/c++/12.2.1/debug/assertions.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_iterator.h \
+  /usr/include/newlib/c++/12.2.1/ext/type_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/ptr_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_function.h \
+  /usr/include/newlib/c++/12.2.1/backward/binders.h \
+  /usr/include/newlib/c++/12.2.1/ext/numeric_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_algobase.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_pair.h \
+  /usr/include/newlib/c++/12.2.1/bits/utility.h \
+  /usr/include/newlib/c++/12.2.1/debug/debug.h \
+  /usr/include/newlib/c++/12.2.1/bits/predefined_ops.h \
+  /usr/include/newlib/c++/12.2.1/bits/refwrap.h \
+  /usr/include/newlib/c++/12.2.1/bits/invoke.h \
+  /usr/include/newlib/c++/12.2.1/bits/range_access.h \
+  /usr/include/newlib/c++/12.2.1/initializer_list \
+  /usr/include/newlib/c++/12.2.1/bits/basic_string.h \
+  /usr/include/newlib/c++/12.2.1/ext/alloc_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/alloc_traits.h \
+  /usr/include/newlib/c++/12.2.1/bits/stl_construct.h \
+  /usr/include/newlib/c++/12.2.1/string_view \
+  /usr/include/newlib/c++/12.2.1/bits/functional_hash.h \
+  /usr/include/newlib/c++/12.2.1/bits/string_view.tcc \
+  /usr/include/newlib/c++/12.2.1/ext/string_conversions.h \
+  /usr/include/newlib/c++/12.2.1/cstdlib \
+  /usr/include/newlib/c++/12.2.1/stdlib.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /usr/include/newlib/c++/12.2.1/bits/std_abs.h \
+  /usr/include/newlib/c++/12.2.1/cerrno \
+  /usr/include/newlib/errno.h \
+  /usr/include/newlib/sys/errno.h \
+  /usr/include/newlib/c++/12.2.1/bits/charconv.h \
+  /usr/include/newlib/c++/12.2.1/bits/basic_string.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/locale_classes.tcc \
+  /usr/include/newlib/c++/12.2.1/system_error \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/error_constants.h \
+  /usr/include/newlib/c++/12.2.1/stdexcept \
+  /usr/include/newlib/c++/12.2.1/streambuf \
+  /usr/include/newlib/c++/12.2.1/bits/streambuf.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/basic_ios.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_facets.h \
+  /usr/include/newlib/c++/12.2.1/cwctype \
+  /usr/include/newlib/wctype.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_base.h \
+  /usr/include/newlib/c++/12.2.1/bits/streambuf_iterator.h \
+  /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_inline.h \
+  /usr/include/newlib/c++/12.2.1/bits/locale_facets.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/basic_ios.tcc \
+  /usr/include/newlib/c++/12.2.1/bits/ostream.tcc \
+  /usr/include/newlib/c++/12.2.1/istream \
+  /usr/include/newlib/c++/12.2.1/bits/istream.tcc \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  ../utilities/include/vl53l0x_wrapper.h
+
 CMakeFiles/smart_light.dir/utilities/neopixel.c.o: ../utilities/neopixel.c \
   /usr/include/newlib/stdio.h \
   /usr/include/newlib/_ansi.h \
@@ -4980,644 +5481,842 @@ CMakeFiles/smart_light.dir/utilities/neopixel.c.o: ../utilities/neopixel.c \
   ws2812b.pio.h
 
 
-../utilities/include/neopixel.h:
+ws2812b.pio.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+/usr/include/newlib/c++/12.2.1/istream:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c:
+/usr/include/newlib/c++/12.2.1/bits/ostream.tcc:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/boot_stage2/include/boot_stage2/config.h:
+/usr/include/newlib/c++/12.2.1/bits/locale_facets.tcc:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_inline.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info.h:
+../utilities/neopixel.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/ctype_base.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/rtc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/include/hardware/adc.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c:
+/usr/include/newlib/sys/time.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/rosc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/rosc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/include/hardware/claim.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/lock_core.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c:
+/usr/include/newlib/c++/12.2.1/bits/ostream_insert.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/include/pico/malloc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c:
 
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/float.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.h:
 
-/usr/include/newlib/math.h:
+/usr/include/newlib/time.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
+../FreeRTOS-Kernel/include/projdefs.h:
 
-/usr/include/newlib/c++/12.2.1/cassert:
+/usr/include/newlib/sys/unistd.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c:
 
-/usr/include/newlib/c++/12.2.1/bits/std_abs.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
-/usr/include/newlib/c++/12.2.1/stdlib.h:
+../FreeRTOS-Kernel/include/mpu_wrappers.h:
 
-/usr/include/newlib/c++/12.2.1/pstl/pstl_config.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c:
 
-/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
+/usr/include/newlib/c++/12.2.1/new:
 
-/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
+/usr/include/newlib/errno.h:
 
-/usr/include/newlib/c++/12.2.1/cstdlib:
+/usr/include/newlib/c++/12.2.1/bits/exception_defines.h:
 
-/usr/include/newlib/unistd.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c:
 
-/usr/include/newlib/sys/times.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_private.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/code.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/include/pico/rand.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picobin_headers/include/boot/picobin.h:
+/usr/include/newlib/c++/12.2.1/ext/alloc_traits.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_types.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_mcu.h:
 
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdatomic.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
+/usr/include/newlib/c++/12.2.1/bits/functional_hash.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/include/pico/printf.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/xip.h:
+/usr/include/newlib/sys/errno.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/busctrl.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c:
+/usr/include/newlib/c++/12.2.1/bits/locale_facets.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
+../utilities/include/vl53l0x_wrapper.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/include/hardware/ticks.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+/usr/include/newlib/sys/string.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/include/hardware/xip_cache.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom_constants.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/include/hardware/flash.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
-
-../FreeRTOS-Kernel/timers.c:
-
-../FreeRTOS-Kernel/include/stack_macros.h:
-
-../FreeRTOS-Kernel/include/task.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c:
-
-/usr/include/newlib/sys/_stdint.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
-
-/usr/include/newlib/stdio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
-
-/usr/include/newlib/sys/types.h:
-
-generated/pico_base/pico/config_autogen.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h:
-
-/usr/include/newlib/sys/_timespec.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/sem.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/include/pico/multicore.h:
-
-/usr/include/newlib/strings.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_verify.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/mutex.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/include/hardware/exception.h:
-
-../FreeRTOS-Kernel/queue.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb_option.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/include/pico/runtime_init.h:
-
-../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/pheap.h:
-
-/usr/include/newlib/sys/_locale.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
-
-/usr/include/newlib/alloca.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_qspi.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/osal/osal.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/include/pico/runtime.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/sync.h:
-
-../FreeRTOS-Kernel/portable/MemMang/heap_4.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/busctrl.h:
-
-../FreeRTOS-Kernel/include/event_groups.h:
-
-/usr/include/newlib/stdlib.h:
-
-/usr/include/newlib/sys/_timeval.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c:
-
-../FreeRTOS-Kernel/include/timers.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:
-
-/usr/include/newlib/sys/lock.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
-
-../FreeRTOS-Kernel/list.c:
-
-/usr/include/newlib/machine/_types.h:
-
-/usr/include/newlib/sys/_types.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio/driver.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
-
-/usr/include/newlib/_newlib_version.h:
-
-/usr/include/newlib/machine/_endian.h:
-
-/usr/include/newlib/sys/reent.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h:
-
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/nvic.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
-
-../FreeRTOS-Kernel/include/FreeRTOS.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picoboot_headers/include/boot/picoboot.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c:
-
-/usr/include/newlib/assert.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/queue.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h:
-
-../FreeRTOS-Kernel/include/portable.h:
-
-../FreeRTOS-Kernel/include/list.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
-
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
-
-../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/portmacro.h:
-
-/usr/include/newlib/sys/features.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
-
-/usr/include/newlib/sys/string.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
-
-../FreeRTOS-Kernel/include/croutine.h:
-
-../FreeRTOS-Kernel/tasks.c:
-
-/usr/include/newlib/machine/_time.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/dcd.h:
-
-/usr/include/newlib/machine/ieeefp.h:
-
-/usr/include/newlib/string.h:
-
-/usr/include/newlib/machine/endian.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
-
-../utilities/neopixel.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/include/hardware/sync.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/include/pico/double.h:
-
-../FreeRTOS-Kernel/include/deprecated_definitions.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
-
-../FreeRTOS-Kernel/event_groups.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/xip.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
-../FreeRTOS-Kernel/include/stream_buffer.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/include/hardware/pll.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.h:
-
-generated/pico_base/pico/version.h:
-
-/usr/include/newlib/newlib.h:
-
-/usr/include/newlib/sys/config.h:
-
-/usr/include/newlib/_ansi.h:
-
-/usr/include/newlib/machine/stdlib.h:
-
-../inc/FreeRTOSConfig.h:
-
-../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c:
-
-../core/main.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/critical_section.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
-
-/usr/include/newlib/sys/cdefs.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/include/pico/float.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/include/pico/flash.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c:
-
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/include/stdatomic.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/adc.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_common.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/timeout_helper.h:
-
-/usr/include/newlib/sys/stat.h:
-
-../FreeRTOS-Kernel/include/queue.h:
-
-../tasks/led_task.c:
-
-/usr/include/newlib/sys/sched.h:
-
-/usr/include/newlib/sys/select.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
-
-../FreeRTOS-Kernel/stream_buffer.c:
-
-../FreeRTOS-Kernel/croutine.c:
-
-/usr/include/newlib/sys/timespec.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
-
-../inc/led_task.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c:
-
-/usr/include/newlib/machine/types.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
-
-/usr/include/newlib/sys/stdio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_debug.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_debug.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/exception.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c:
+/usr/include/newlib/c++/12.2.1/clocale:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/include/pico/printf.h:
+/usr/include/newlib/c++/12.2.1/bits/functexcept.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_compiler.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_mcu.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
 /usr/include/newlib/inttypes.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c:
+/usr/include/newlib/machine/types.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h:
+../inc/led_task.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h:
+../utilities/cpp_vl53l0x/VL53L0X.cpp:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/datetime.h:
+/usr/include/newlib/ctype.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_types.h:
+/usr/include/newlib/sys/_pthreadtypes.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_pvt.h:
+/usr/include/newlib/sys/timespec.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/osal/osal_pico.h:
+../FreeRTOS-Kernel/croutine.c:
 
-ws2812b.pio.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/include/pico/rand.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_private.h:
+/usr/include/newlib/sys/_sigset.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c:
+../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h:
 
-/usr/include/newlib/machine/_default_types.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c:
-
-../FreeRTOS-Kernel/include/mpu_wrappers.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c:
-
-/usr/include/newlib/sys/unistd.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
-
-../FreeRTOS-Kernel/include/projdefs.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
-
-/usr/include/newlib/time.h:
-
-/usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_time_adapter/include/pico/time_adapter.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/lock_core.h:
-
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/include/hardware/claim.h:
+/usr/include/newlib/sys/select.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/multicore.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c:
+../FreeRTOS-Kernel/include/queue.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c:
+/usr/include/newlib/sys/stat.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c:
+/usr/include/newlib/c++/12.2.1/bits/cxxabi_forced.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/timeout_helper.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_common.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/include/pico/flash.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h:
+
+/usr/include/newlib/sys/cdefs.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
 
 /usr/include/newlib/machine/time.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h:
 
-/usr/include/newlib/sys/time.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/critical_section.h:
+
+../core/main.c:
+
+/usr/include/newlib/c++/12.2.1/bits/postypes.h:
+
+../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h:
+
+/usr/include/newlib/machine/stdlib.h:
+
+/usr/include/newlib/c++/12.2.1/ext/type_traits.h:
+
+/usr/include/newlib/_ansi.h:
+
+/usr/include/newlib/sys/config.h:
+
+/usr/include/newlib/newlib.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+
+generated/pico_base/pico/version.h:
+
+/usr/include/newlib/c++/12.2.1/bits/string_view.tcc:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/include/hardware/pll.h:
+
+../FreeRTOS-Kernel/include/stream_buffer.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/xip.h:
+
+/usr/include/newlib/wctype.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c:
+
+../FreeRTOS-Kernel/event_groups.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
+
+../FreeRTOS-Kernel/include/deprecated_definitions.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/include/pico/double.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
+
+/usr/include/newlib/machine/endian.h:
+
+/usr/include/newlib/c++/12.2.1/bits/nested_exception.h:
+
+/usr/include/newlib/string.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/dcd.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_compiler.h:
+
+/usr/include/newlib/machine/_time.h:
+
+../FreeRTOS-Kernel/tasks.c:
+
+/usr/include/newlib/c++/12.2.1/ext/numeric_traits.h:
+
+../FreeRTOS-Kernel/include/croutine.h:
+
+../utilities/cpp_vl53l0x/VL53L0X.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c:
+
+/usr/include/newlib/sys/features.h:
+
+../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/portmacro.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h:
+
+/usr/include/newlib/sys/sched.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c:
+
+/usr/include/newlib/c++/12.2.1/bits/charconv.h:
+
+../FreeRTOS-Kernel/include/list.h:
+
+/usr/include/newlib/c++/12.2.1/bits/concept_check.h:
+
+/usr/include/newlib/c++/12.2.1/ext/string_conversions.h:
+
+../FreeRTOS-Kernel/include/portable.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/queue.h:
+
+/usr/include/newlib/assert.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picoboot_headers/include/boot/picoboot.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/nvic.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c:
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c:
+/usr/include/newlib/c++/12.2.1/bits/basic_ios.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/include/hardware/adc.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h:
+
+/usr/include/newlib/sys/reent.h:
+
+/usr/include/newlib/machine/_endian.h:
+
+/usr/include/newlib/_newlib_version.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
+
+/usr/include/newlib/sys/_types.h:
+
+/usr/include/newlib/machine/_types.h:
+
+../FreeRTOS-Kernel/list.c:
+
+/usr/include/newlib/sys/lock.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stringfwd.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/datetime.h:
+
+/usr/include/newlib/machine/ieeefp.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:
+
+/usr/include/newlib/sys/_intsup.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c:
+
+/usr/include/newlib/sys/_timeval.h:
+
+/usr/include/newlib/stdlib.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/busctrl.h:
+
+../FreeRTOS-Kernel/portable/MemMang/heap_4.c:
+
+/usr/include/newlib/c++/12.2.1/system_error:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/sync.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/include/pico/runtime.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/osal/osal.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_qspi.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c:
+
+/usr/include/newlib/c++/12.2.1/bits/streambuf_iterator.h:
+
+/usr/include/newlib/alloca.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h:
+
+/usr/include/newlib/c++/12.2.1/cerrno:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c:
+
+../inc/sensor_task.h:
+
+../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/include/pico/runtime_init.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
 
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/adc.h:
 
-../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h:
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
 
-/usr/include/newlib/sys/_sigset.h:
+/usr/include/newlib/c++/12.2.1/cctype:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c:
+../inc/FreeRTOSConfig.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb_option.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_exception/include/hardware/exception.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/mutex.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_verify.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++allocator.h:
+
+/usr/include/newlib/strings.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/include/pico/stdio/driver.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_multicore/include/pico/multicore.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_sync/include/pico/sem.h:
+
+/usr/include/newlib/c++/12.2.1/bits/istream.tcc:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c:
+
+generated/pico_base/pico/config_autogen.h:
+
+/usr/include/newlib/sys/types.h:
+
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
+
+/usr/include/newlib/stdio.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp:
+
+/usr/include/newlib/sys/_stdint.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c:
+
+/usr/include/newlib/c++/12.2.1/bits/utility.h:
+
+../FreeRTOS-Kernel/include/task.h:
+
+../FreeRTOS-Kernel/include/stack_macros.h:
+
+../FreeRTOS-Kernel/include/timers.h:
+
+../FreeRTOS-Kernel/timers.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/include/stdatomic.h:
+
+/usr/include/newlib/c++/12.2.1/string:
 
 /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
+
+../utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/include/hardware/flash.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_algobase.h:
+
+/usr/include/newlib/machine/_default_types.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom_constants.h:
+
+/usr/include/newlib/c++/12.2.1/streambuf:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c:
+
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/include/hardware/boot_lock.h:
 
-/usr/include/newlib/sys/_intsup.h:
+/usr/include/newlib/c++/12.2.1/bits/move.h:
 
-/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c:
+/usr/include/newlib/c++/12.2.1/debug/debug.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_time_adapter/include/pico/time_adapter.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
+
+/usr/include/newlib/locale.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/include/hardware/ticks.h:
+
+/usr/include/newlib/c++/12.2.1/cwchar:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c:
+
+/usr/include/newlib/sys/_locale.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/include/hardware/sync.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/busctrl.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/xip.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/include/pico/float.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
+
+../FreeRTOS-Kernel/include/FreeRTOS.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picobin_headers/include/boot/picobin.h:
+
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h:
+
+/usr/include/newlib/c++/12.2.1/bits/streambuf.tcc:
+
+../FreeRTOS-Kernel/include/event_groups.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/code.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c:
+
+/usr/include/newlib/sys/_timespec.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
+
+/usr/include/newlib/sys/times.h:
+
+/usr/include/newlib/c++/12.2.1/bits/exception.h:
+
+/usr/include/newlib/c++/12.2.1/backward/binders.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c:
+
+/usr/include/newlib/unistd.h:
+
+/usr/include/newlib/c++/12.2.1/cstdlib:
+
+/usr/include/newlib/c++/12.2.1/bits/basic_string.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
+
+/usr/include/newlib/c++/12.2.1/pstl/pstl_config.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h:
+
+/usr/include/newlib/c++/12.2.1/stdlib.h:
+
+/usr/include/newlib/c++/12.2.1/bits/new_allocator.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c:
+
+/usr/include/newlib/c++/12.2.1/bits/std_abs.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c:
+
+/usr/include/newlib/c++/12.2.1/cassert:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
+
+../tasks/sensor_task.c:
+
+/usr/include/newlib/math.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c:
+
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/float.h:
+
+/usr/include/newlib/c++/12.2.1/ostream:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/include/pico/malloc.h:
+
+../tasks/led_task.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c:
+
+/usr/include/newlib/c++/12.2.1/bits/alloc_traits.h:
+
+/usr/include/newlib/c++/12.2.1/bits/cpp_type_traits.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/rosc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/rosc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_util/include/pico/util/pheap.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/adc.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/rtc.h:
+
+/usr/include/newlib/c++/12.2.1/bits/basic_string.tcc:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/error_constants.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr-default.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c:
+
+../utilities/include/neopixel.h:
+
+/usr/include/newlib/c++/12.2.1/cstdio:
+
+/usr/include/newlib/c++/12.2.1/iosfwd:
+
+/usr/include/newlib/c++/12.2.1/iostream:
+
+/usr/include/newlib/c++/12.2.1/ios:
+
+/usr/include/newlib/c++/12.2.1/bits/memoryfwd.h:
+
+/usr/include/newlib/wchar.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h:
+
+/usr/include/newlib/c++/12.2.1/debug/assertions.h:
+
+/usr/include/newlib/c++/12.2.1/bits/basic_ios.tcc:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h:
+
+/usr/include/newlib/c++/12.2.1/exception:
+
+/usr/include/newlib/c++/12.2.1/bits/exception_ptr.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/pico_binary_info/include/pico/binary_info.h:
+
+/usr/include/newlib/c++/12.2.1/bits/cxxabi_init_exception.h:
+
+../FreeRTOS-Kernel/stream_buffer.c:
+
+/usr/include/newlib/c++/12.2.1/typeinfo:
+
+/usr/include/newlib/sys/stdio.h:
+
+/usr/include/newlib/c++/12.2.1/bits/hash_bytes.h:
+
+/usr/include/newlib/c++/12.2.1/type_traits:
+
+/usr/include/newlib/c++/12.2.1/bits/char_traits.h:
+
+/usr/include/newlib/c++/12.2.1/bits/localefwd.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++locale.h:
+
+/usr/include/newlib/c++/12.2.1/bits/ios_base.h:
+
+/usr/include/newlib/c++/12.2.1/ext/atomicity.h:
+
+../FreeRTOS-Kernel/queue.c:
+
+/usr/lib/gcc/arm-none-eabi/12.2.1/include/stdatomic.h:
+
+/usr/include/newlib/c++/12.2.1/bits/refwrap.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/osal/osal_pico.h:
+
+/usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/atomic_word.h:
+
+/usr/include/newlib/c++/12.2.1/bits/locale_classes.h:
+
+/usr/include/newlib/c++/12.2.1/bits/allocator.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_types.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_iterator.h:
+
+/usr/include/newlib/c++/12.2.1/cstdint:
+
+/usr/include/newlib/c++/12.2.1/bits/ptr_traits.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_function.h:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_pair.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
+
+/usr/include/newlib/c++/12.2.1/bits/predefined_ops.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/include/hardware/xip_cache.h:
+
+/usr/include/newlib/c++/12.2.1/bits/invoke.h:
+
+/usr/include/newlib/c++/12.2.1/bits/range_access.h:
+
+/usr/include/newlib/c++/12.2.1/initializer_list:
+
+/usr/include/newlib/c++/12.2.1/bits/stl_construct.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_pvt.h:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/boot_stage2/include/boot_stage2/config.h:
+
+/usr/include/newlib/c++/12.2.1/string_view:
+
+/usr/include/newlib/c++/12.2.1/bits/locale_classes.tcc:
+
+/usr/include/newlib/c++/12.2.1/stdexcept:
+
+/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
+
+/usr/include/newlib/c++/12.2.1/cwctype:

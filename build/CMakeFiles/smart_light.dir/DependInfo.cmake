@@ -98,6 +98,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../inc"
   "../core"
   "../utilities/include"
+  "../utilities/cpp_vl53l0x"
   "../FreeRTOS-Kernel/include"
   "../FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040"
   "/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/include"
@@ -254,8 +255,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d"
   "/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/led_task.c" "CMakeFiles/smart_light.dir/tasks/led_task.c.o" "gcc" "CMakeFiles/smart_light.dir/tasks/led_task.c.o.d"
+  "/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/sensor_task.c" "CMakeFiles/smart_light.dir/tasks/sensor_task.c.o" "gcc" "CMakeFiles/smart_light.dir/tasks/sensor_task.c.o.d"
   "/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/neopixel.c" "CMakeFiles/smart_light.dir/utilities/neopixel.c.o" "gcc" "CMakeFiles/smart_light.dir/utilities/neopixel.c.o.d"
   "/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
+  "/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/VL53L0X.cpp" "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o" "gcc" "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o.d"
+  "/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp" "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o" "gcc" "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o.d"
   )
 
 # Targets to which this target links.

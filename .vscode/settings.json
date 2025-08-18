@@ -6,6 +6,9 @@
         "task.h": "c",
         "ws2812b.pio.h": "c",
         "stdio.h": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "vl53l0x_wrapper.h": "c",
+        "freertos.h": "c",
+        "string.h": "c"
     }
 }
