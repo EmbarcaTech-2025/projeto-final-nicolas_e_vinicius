@@ -2322,29 +2322,29 @@ home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 
-tasks/led_task.o: tasks/led_task.c.o
-.PHONY : tasks/led_task.o
+tasks/people_led_task.o: tasks/people_led_task.c.o
+.PHONY : tasks/people_led_task.o
 
 # target to build an object file
-tasks/led_task.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/led_task.c.o
-.PHONY : tasks/led_task.c.o
+tasks/people_led_task.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.o
+.PHONY : tasks/people_led_task.c.o
 
-tasks/led_task.i: tasks/led_task.c.i
-.PHONY : tasks/led_task.i
+tasks/people_led_task.i: tasks/people_led_task.c.i
+.PHONY : tasks/people_led_task.i
 
 # target to preprocess a source file
-tasks/led_task.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/led_task.c.i
-.PHONY : tasks/led_task.c.i
+tasks/people_led_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.i
+.PHONY : tasks/people_led_task.c.i
 
-tasks/led_task.s: tasks/led_task.c.s
-.PHONY : tasks/led_task.s
+tasks/people_led_task.s: tasks/people_led_task.c.s
+.PHONY : tasks/people_led_task.s
 
 # target to generate assembly for a file
-tasks/led_task.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/led_task.c.s
-.PHONY : tasks/led_task.c.s
+tasks/people_led_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.s
+.PHONY : tasks/people_led_task.c.s
 
 tasks/sensor_task.o: tasks/sensor_task.c.o
 .PHONY : tasks/sensor_task.o
@@ -2441,6 +2441,30 @@ utilities/neopixel.s: utilities/neopixel.c.s
 utilities/neopixel.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/neopixel.c.s
 .PHONY : utilities/neopixel.c.s
+
+utilities/traffic_light_control.o: utilities/traffic_light_control.c.o
+.PHONY : utilities/traffic_light_control.o
+
+# target to build an object file
+utilities/traffic_light_control.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.o
+.PHONY : utilities/traffic_light_control.c.o
+
+utilities/traffic_light_control.i: utilities/traffic_light_control.c.i
+.PHONY : utilities/traffic_light_control.i
+
+# target to preprocess a source file
+utilities/traffic_light_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.i
+.PHONY : utilities/traffic_light_control.c.i
+
+utilities/traffic_light_control.s: utilities/traffic_light_control.c.s
+.PHONY : utilities/traffic_light_control.s
+
+# target to generate assembly for a file
+utilities/traffic_light_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.s
+.PHONY : utilities/traffic_light_control.c.s
 
 # Help Target
 help:
@@ -2722,9 +2746,9 @@ help:
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... tasks/led_task.o"
-	@echo "... tasks/led_task.i"
-	@echo "... tasks/led_task.s"
+	@echo "... tasks/people_led_task.o"
+	@echo "... tasks/people_led_task.i"
+	@echo "... tasks/people_led_task.s"
 	@echo "... tasks/sensor_task.o"
 	@echo "... tasks/sensor_task.i"
 	@echo "... tasks/sensor_task.s"
@@ -2737,6 +2761,9 @@ help:
 	@echo "... utilities/neopixel.o"
 	@echo "... utilities/neopixel.i"
 	@echo "... utilities/neopixel.s"
+	@echo "... utilities/traffic_light_control.o"
+	@echo "... utilities/traffic_light_control.i"
+	@echo "... utilities/traffic_light_control.s"
 .PHONY : help
 
 
