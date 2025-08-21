@@ -12,6 +12,7 @@
         "string.h": "c",
         "traffic_light_control.h": "c",
         "people_led_task.h": "c",
-        "car_led_task.h": "c"
+        "car_led_task.h": "c",
+        "compare": "c"
     }
 }
