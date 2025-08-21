@@ -2322,30 +2322,6 @@ home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 
-tasks/people_led_task.o: tasks/people_led_task.c.o
-.PHONY : tasks/people_led_task.o
-
-# target to build an object file
-tasks/people_led_task.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.o
-.PHONY : tasks/people_led_task.c.o
-
-tasks/people_led_task.i: tasks/people_led_task.c.i
-.PHONY : tasks/people_led_task.i
-
-# target to preprocess a source file
-tasks/people_led_task.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.i
-.PHONY : tasks/people_led_task.c.i
-
-tasks/people_led_task.s: tasks/people_led_task.c.s
-.PHONY : tasks/people_led_task.s
-
-# target to generate assembly for a file
-tasks/people_led_task.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/people_led_task.c.s
-.PHONY : tasks/people_led_task.c.s
-
 tasks/sensor_task.o: tasks/sensor_task.c.o
 .PHONY : tasks/sensor_task.o
 
@@ -2369,6 +2345,30 @@ tasks/sensor_task.s: tasks/sensor_task.c.s
 tasks/sensor_task.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/sensor_task.c.s
 .PHONY : tasks/sensor_task.c.s
+
+tasks/traffic_lights_task.o: tasks/traffic_lights_task.c.o
+.PHONY : tasks/traffic_lights_task.o
+
+# target to build an object file
+tasks/traffic_lights_task.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o
+.PHONY : tasks/traffic_lights_task.c.o
+
+tasks/traffic_lights_task.i: tasks/traffic_lights_task.c.i
+.PHONY : tasks/traffic_lights_task.i
+
+# target to preprocess a source file
+tasks/traffic_lights_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.i
+.PHONY : tasks/traffic_lights_task.c.i
+
+tasks/traffic_lights_task.s: tasks/traffic_lights_task.c.s
+.PHONY : tasks/traffic_lights_task.s
+
+# target to generate assembly for a file
+tasks/traffic_lights_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.s
+.PHONY : tasks/traffic_lights_task.c.s
 
 utilities/cpp_vl53l0x/VL53L0X.o: utilities/cpp_vl53l0x/VL53L0X.cpp.o
 .PHONY : utilities/cpp_vl53l0x/VL53L0X.o
@@ -2746,12 +2746,12 @@ help:
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... tasks/people_led_task.o"
-	@echo "... tasks/people_led_task.i"
-	@echo "... tasks/people_led_task.s"
 	@echo "... tasks/sensor_task.o"
 	@echo "... tasks/sensor_task.i"
 	@echo "... tasks/sensor_task.s"
+	@echo "... tasks/traffic_lights_task.o"
+	@echo "... tasks/traffic_lights_task.i"
+	@echo "... tasks/traffic_lights_task.s"
 	@echo "... utilities/cpp_vl53l0x/VL53L0X.o"
 	@echo "... utilities/cpp_vl53l0x/VL53L0X.i"
 	@echo "... utilities/cpp_vl53l0x/VL53L0X.s"

@@ -5,7 +5,7 @@
 #include "hardware/i2c.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "led_task.h"
+#include "traffic_lights_task.h"
 #include "sensor_task.h"
 #include "vl53l0x_wrapper.h"
 
@@ -18,7 +18,7 @@ int main() {
 
     stdio_init_all();
 
-    xTaskCreate(led_task, "Traffic Lights", configMINIMAL_STACK_SIZE + 256, NULL, 1, NULL);
+    xTaskCreate(traffic_lights_task, "Traffic Lights", configMINIMAL_STACK_SIZE + 256, NULL, 1, NULL);
     xTaskCreate(sensor_task, "Presence Sensor", configMINIMAL_STACK_SIZE + 256, NULL, 1, NULL);
 
     vTaskStartScheduler();

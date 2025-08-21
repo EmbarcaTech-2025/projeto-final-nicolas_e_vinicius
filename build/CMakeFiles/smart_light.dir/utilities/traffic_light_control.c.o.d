@@ -63,4 +63,5 @@ CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.o: \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/neopixel.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/neopixel.h \
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_light_control.h

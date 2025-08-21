@@ -139,19 +139,19 @@ CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp -o CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.s
 
-CMakeFiles/smart_light.dir/tasks/people_led_task.c.o: CMakeFiles/smart_light.dir/flags.make
-CMakeFiles/smart_light.dir/tasks/people_led_task.c.o: ../tasks/people_led_task.c
-CMakeFiles/smart_light.dir/tasks/people_led_task.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/smart_light.dir/tasks/people_led_task.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/tasks/people_led_task.c.o -MF CMakeFiles/smart_light.dir/tasks/people_led_task.c.o.d -o CMakeFiles/smart_light.dir/tasks/people_led_task.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/people_led_task.c
+CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o: CMakeFiles/smart_light.dir/flags.make
+CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o: ../tasks/traffic_lights_task.c
+CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o: CMakeFiles/smart_light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o -MF CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o.d -o CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o -c /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/traffic_lights_task.c
 
-CMakeFiles/smart_light.dir/tasks/people_led_task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_light.dir/tasks/people_led_task.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/people_led_task.c > CMakeFiles/smart_light.dir/tasks/people_led_task.c.i
+CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/traffic_lights_task.c > CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.i
 
-CMakeFiles/smart_light.dir/tasks/people_led_task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_light.dir/tasks/people_led_task.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/people_led_task.c -o CMakeFiles/smart_light.dir/tasks/people_led_task.c.s
+CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/traffic_lights_task.c -o CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.s
 
 CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: CMakeFiles/smart_light.dir/flags.make
 CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: ../tasks/sensor_task.c
@@ -1493,7 +1493,7 @@ smart_light_OBJECTS = \
 "CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.o" \
 "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o" \
 "CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o" \
-"CMakeFiles/smart_light.dir/tasks/people_led_task.c.o" \
+"CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o" \
 "CMakeFiles/smart_light.dir/tasks/sensor_task.c.o" \
 "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o" \
@@ -1599,7 +1599,7 @@ smart_light.elf: CMakeFiles/smart_light.dir/utilities/neopixel.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/utilities/traffic_light_control.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o
 smart_light.elf: CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp.o
-smart_light.elf: CMakeFiles/smart_light.dir/tasks/people_led_task.c.o
+smart_light.elf: CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/tasks/sensor_task.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
 smart_light.elf: CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o

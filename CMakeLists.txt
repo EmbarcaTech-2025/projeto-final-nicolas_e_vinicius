@@ -37,9 +37,10 @@ pico_sdk_init()
 add_executable(${ProjectName}
    core/main.c
    utilities/neopixel.c
+   utilities/traffic_light_control.c
    utilities/cpp_vl53l0x/VL53L0X.cpp
    utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp
-   tasks/led_task.c
+   tasks/traffic_lights_task.c
    tasks/sensor_task.c
 )
  
