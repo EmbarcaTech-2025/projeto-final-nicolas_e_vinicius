@@ -7,6 +7,7 @@
 #include "task.h"
 #include "vl53l0x_wrapper.h"
 #include "sensor_task.h"
+#include "task_handles.h"
 
 #define VL0X_SDA 0
 #define VL0X_SCL 1
@@ -44,6 +45,10 @@ void sensor_task(void *params)
             printf("Timeout occurred\n");
         } else {
             printf("Range: %u mm\n", range);
+            if(range < 1000)
+            {
+                xTaskNotifyGive(handle_tl_task);
+            }
         }
 
         vTaskDelay(pdMS_TO_TICKS(200));

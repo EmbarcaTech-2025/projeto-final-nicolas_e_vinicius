@@ -86,4 +86,5 @@ CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/task.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/list.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/vl53l0x_wrapper.h \
- /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/sensor_task.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/sensor_task.h \
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/task_handles.h

@@ -2322,6 +2322,30 @@ home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 
+tasks/display_task.o: tasks/display_task.c.o
+.PHONY : tasks/display_task.o
+
+# target to build an object file
+tasks/display_task.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/display_task.c.o
+.PHONY : tasks/display_task.c.o
+
+tasks/display_task.i: tasks/display_task.c.i
+.PHONY : tasks/display_task.i
+
+# target to preprocess a source file
+tasks/display_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/display_task.c.i
+.PHONY : tasks/display_task.c.i
+
+tasks/display_task.s: tasks/display_task.c.s
+.PHONY : tasks/display_task.s
+
+# target to generate assembly for a file
+tasks/display_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/tasks/display_task.c.s
+.PHONY : tasks/display_task.c.s
+
 tasks/sensor_task.o: tasks/sensor_task.c.o
 .PHONY : tasks/sensor_task.o
 
@@ -2441,6 +2465,30 @@ utilities/neopixel.s: utilities/neopixel.c.s
 utilities/neopixel.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/neopixel.c.s
 .PHONY : utilities/neopixel.c.s
+
+utilities/ssd1306.o: utilities/ssd1306.c.o
+.PHONY : utilities/ssd1306.o
+
+# target to build an object file
+utilities/ssd1306.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/ssd1306.c.o
+.PHONY : utilities/ssd1306.c.o
+
+utilities/ssd1306.i: utilities/ssd1306.c.i
+.PHONY : utilities/ssd1306.i
+
+# target to preprocess a source file
+utilities/ssd1306.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/ssd1306.c.i
+.PHONY : utilities/ssd1306.c.i
+
+utilities/ssd1306.s: utilities/ssd1306.c.s
+.PHONY : utilities/ssd1306.s
+
+# target to generate assembly for a file
+utilities/ssd1306.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_light.dir/build.make CMakeFiles/smart_light.dir/utilities/ssd1306.c.s
+.PHONY : utilities/ssd1306.c.s
 
 utilities/traffic_light_control.o: utilities/traffic_light_control.c.o
 .PHONY : utilities/traffic_light_control.o
@@ -2746,6 +2794,9 @@ help:
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... tasks/display_task.o"
+	@echo "... tasks/display_task.i"
+	@echo "... tasks/display_task.s"
 	@echo "... tasks/sensor_task.o"
 	@echo "... tasks/sensor_task.i"
 	@echo "... tasks/sensor_task.s"
@@ -2761,6 +2812,9 @@ help:
 	@echo "... utilities/neopixel.o"
 	@echo "... utilities/neopixel.i"
 	@echo "... utilities/neopixel.s"
+	@echo "... utilities/ssd1306.o"
+	@echo "... utilities/ssd1306.i"
+	@echo "... utilities/ssd1306.s"
 	@echo "... utilities/traffic_light_control.o"
 	@echo "... utilities/traffic_light_control.i"
 	@echo "... utilities/traffic_light_control.s"

@@ -9,13 +9,13 @@
 #define CAR_YELLOW_LED_NUM                  5
 #define CAR_RED_LED_NUM                     4
 
-#define TIME_GREEN_PEOPLE_DEFAULT           2000
-#define TIME_GREEN_CAR_DEFAULT              2000
-#define TIME_TO_TURN_GREEN_PEOPLE_DEFAULT   1000
-#define TIME_TO_TURN_GREEN_CAR_DEFAULT      1000
+#define TIME_GREEN_PEOPLE_DEFAULT           10000
+#define TIME_GREEN_CAR_DEFAULT              10000
+#define TIME_TO_TURN_GREEN_PEOPLE_DEFAULT   3000
+#define TIME_TO_TURN_GREEN_CAR_DEFAULT      3000
+#define TIME_TO_CLOSE_CAR_AFTER_PRESENCE    3000
 
-#define YELLOW_TIME                         500
-#define RED_TIME                            2000
+#define YELLOW_TIME                         3000
 
 #define IS_PEOPLE(var)              ((var) == PEOPLE)
 #define IS_CAR(var)                 ((var) == CAR)
@@ -46,8 +46,8 @@ void set_time_green(uint8_t people_or_car, uint16_t new_time);
 
 void set_time_to_turn_green(uint8_t people_or_car, uint16_t new_time);
 
-uint8_t get_time_green(uint8_t people_or_car);
+uint16_t get_time_green(uint8_t people_or_car);
 
-uint8_t get_time_to_turn_green(uint8_t people_or_car);
+uint16_t get_time_to_turn_green(uint8_t people_or_car);
 
 #endif

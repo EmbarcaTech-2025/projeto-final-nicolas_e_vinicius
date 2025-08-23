@@ -52,7 +52,7 @@ void led_yellow_on(uint8_t people_or_car)
     }
 }
 
-uint8_t get_time_green(uint8_t people_or_car)
+uint16_t get_time_green(uint8_t people_or_car)
 {
     if(IS_PEOPLE(people_or_car))
     {
@@ -64,7 +64,7 @@ uint8_t get_time_green(uint8_t people_or_car)
     }
 }
 
-uint8_t get_time_to_turn_green(uint8_t people_or_car)
+uint16_t get_time_to_turn_green(uint8_t people_or_car)
 {
     if(IS_PEOPLE(people_or_car))
     {

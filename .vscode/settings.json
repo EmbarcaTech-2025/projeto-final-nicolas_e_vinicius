@@ -13,6 +13,9 @@
         "traffic_light_control.h": "c",
         "people_led_task.h": "c",
         "car_led_task.h": "c",
-        "compare": "c"
+        "compare": "c",
+        "sensor_task.h": "c",
+        "traffic_lights_task.h": "c",
+        "display_task.h": "c"
     }
 }
