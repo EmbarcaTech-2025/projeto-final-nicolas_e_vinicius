@@ -14,11 +14,17 @@
 #define TIME_TO_TURN_GREEN_PEOPLE_DEFAULT   3000
 #define TIME_TO_TURN_GREEN_CAR_DEFAULT      3000
 #define TIME_TO_CLOSE_CAR_AFTER_PRESENCE    3000
+#define TIME_TO_CLOSE_CAR_MIN               3000
 
 #define YELLOW_TIME                         3000
 
 #define IS_PEOPLE(var)              ((var) == PEOPLE)
 #define IS_CAR(var)                 ((var) == CAR)
+
+extern uint16_t time_green_people;
+extern uint16_t time_green_car;
+extern uint16_t time_to_turn_green_people;
+extern uint16_t time_to_turn_green_car;
 
 enum TrafficState
 {

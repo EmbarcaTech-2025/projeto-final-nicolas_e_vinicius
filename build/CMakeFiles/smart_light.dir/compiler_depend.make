@@ -4897,7 +4897,8 @@ CMakeFiles/smart_light.dir/tasks/display_task.c.o: ../tasks/display_task.c \
   ../utilities/include/vl53l0x_wrapper.h \
   ../utilities/include/ssd1306.h \
   ../inc/display_task.h \
-  ../utilities/include/task_handles.h
+  ../utilities/include/task_handles.h \
+  ../inc/traffic_light_control.h
 
 CMakeFiles/smart_light.dir/tasks/sensor_task.c.o: ../tasks/sensor_task.c \
   /usr/include/newlib/stdio.h \
@@ -5106,7 +5107,8 @@ CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o: ../tasks/traffic_light
   ../FreeRTOS-Kernel/include/list.h \
   ../inc/traffic_lights_task.h \
   ../utilities/include/neopixel.h \
-  ../inc/traffic_light_control.h
+  ../inc/traffic_light_control.h \
+  ../inc/display_task.h
 
 CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o: ../utilities/cpp_vl53l0x/VL53L0X.cpp \
   ../utilities/cpp_vl53l0x/VL53L0X.h \
@@ -6505,11 +6507,11 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr-default.h:
 
+../inc/traffic_light_control.h:
+
 /home/pininsu/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c:
 
 ../utilities/include/neopixel.h:
-
-../inc/traffic_light_control.h:
 
 ../utilities/cpp_vl53l0x/VL53L0X.cpp:
 

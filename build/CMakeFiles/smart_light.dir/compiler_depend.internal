@@ -4984,6 +4984,7 @@ CMakeFiles/smart_light.dir/tasks/display_task.c.o
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/ssd1306.h
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/display_task.h
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/task_handles.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_light_control.h
 
 CMakeFiles/smart_light.dir/tasks/sensor_task.c.o
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/tasks/sensor_task.c
@@ -5195,6 +5196,7 @@ CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_lights_task.h
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/neopixel.h
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_light_control.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/display_task.h
 
 CMakeFiles/smart_light.dir/utilities/cpp_vl53l0x/VL53L0X.cpp.o
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/cpp_vl53l0x/VL53L0X.cpp

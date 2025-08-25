@@ -84,4 +84,5 @@ CMakeFiles/smart_light.dir/tasks/traffic_lights_task.c.o: \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/FreeRTOS-Kernel/include/list.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_lights_task.h \
  /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/utilities/include/neopixel.h \
- /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_light_control.h
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/traffic_light_control.h \
+ /home/pininsu/Documents/embarcatech/projeto-final-nicolas_e_vinicius/inc/display_task.h

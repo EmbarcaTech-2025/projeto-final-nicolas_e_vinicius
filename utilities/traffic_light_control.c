@@ -4,7 +4,7 @@
 #include "traffic_light_control.h"
 
 uint16_t time_green_people = TIME_GREEN_PEOPLE_DEFAULT;
-uint16_t time_green_car = TIME_GREEN_CAR_DEFAULT;
+uint16_t time_green_car = TIME_GREEN_CAR_DEFAULT - (TIME_TO_CLOSE_CAR_MIN + TIME_TO_CLOSE_CAR_AFTER_PRESENCE);
 uint16_t time_to_turn_green_people = TIME_TO_TURN_GREEN_PEOPLE_DEFAULT;
 uint16_t time_to_turn_green_car = TIME_TO_TURN_GREEN_CAR_DEFAULT;
 

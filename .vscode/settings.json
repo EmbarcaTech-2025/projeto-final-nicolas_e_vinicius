@@ -16,6 +16,8 @@
         "compare": "c",
         "sensor_task.h": "c",
         "traffic_lights_task.h": "c",
-        "display_task.h": "c"
+        "display_task.h": "c",
+        "task_handles.h": "c",
+        "ssd1306.h": "c"
     }
 }
