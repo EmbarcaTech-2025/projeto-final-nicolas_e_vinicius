@@ -8,6 +8,7 @@
 #include "traffic_lights_task.h"
 #include "sensor_task.h"
 #include "display_task.h"
+#include "wifi_task.h"
 #include "vl53l0x_wrapper.h"
 #include "task_handles.h"
 
@@ -19,6 +20,7 @@
 TaskHandle_t handle_tl_task         = NULL;
 TaskHandle_t handle_sensor_task     = NULL;
 TaskHandle_t handle_display_task    = NULL;
+TaskHandle_t handle_wifi_task       = NULL;
 
 int main() {
 
@@ -27,6 +29,7 @@ int main() {
     xTaskCreate(traffic_lights_task, "Traffic Lights", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_tl_task);
     xTaskCreate(sensor_task, "Presence Sensor", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_sensor_task);
     xTaskCreate(display_task, "Display", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_display_task);
+    xTaskCreate(wifi_task, "WIFI", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_wifi_task);
 
     vTaskStartScheduler();
 

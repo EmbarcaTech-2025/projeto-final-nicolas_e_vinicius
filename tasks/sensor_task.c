@@ -26,14 +26,14 @@ void sensor_task(void *params)
     VL53L0X_t* sensor = VL53L0X_create(I2C_PORT, SENSOR_ADDR);
 
     if (sensor == NULL) {
-        printf("Problem creating sensor object!");
+        // printf("Problem creating sensor object!");
         return;
     }
 
     // Initialize the sensor
     if (!VL53L0X_init(sensor, true)) {
         VL53L0X_destroy(sensor); // Clean up
-        printf("Problem initializing sensor!");
+        // printf("Problem initializing sensor!");
         return;
     }
     
@@ -42,9 +42,9 @@ void sensor_task(void *params)
         uint16_t range = VL53L0X_readRangeSingleMillimeters(sensor);
 
         if (VL53L0X_timeoutOccurred(sensor)) {
-            printf("Timeout occurred\n");
+            // printf("Timeout occurred\n");
         } else {
-            printf("Range: %u mm\n", range);
+            // printf("Range: %u mm\n", range);
             if(range < 1000)
             {
                 xTaskNotifyGive(handle_tl_task);

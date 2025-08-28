@@ -12,7 +12,7 @@ if (EXISTS ${picoVscode})
    include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico CACHE STRING "Board type")
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 cmake_minimum_required(VERSION 3.12)
 
@@ -44,6 +44,7 @@ add_executable(${ProjectName}
    tasks/traffic_lights_task.c
    tasks/sensor_task.c
    tasks/display_task.c
+   tasks/wifi_task.c
 )
  
 pico_generate_pio_header(smart_light ${CMAKE_CURRENT_LIST_DIR}/utilities/include/ws2812b.pio)
@@ -72,12 +73,14 @@ target_link_libraries(${ProjectName}
    FreeRTOS-Kernel-Heap4
    pico_stdlib
    pico_rand
+   pico_lwip
    hardware_adc
    hardware_pwm 
    hardware_gpio
    hardware_i2c
    hardware_pio
    hardware_clocks
+   pico_cyw43_arch_lwip_threadsafe_background
    )
 
 pico_add_extra_outputs(${ProjectName})
