@@ -2,34 +2,64 @@
 #include <stdlib.h>
 #include <string.h>
 #include "pico/stdlib.h"
-#include "hardware/i2c.h"
+#include "hardware/gpio.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "traffic_lights_task.h"
 #include "sensor_task.h"
 #include "display_task.h"
-#include "wifi_task.h"
-#include "vl53l0x_wrapper.h"
+#include "ap_task.h"
+#include "sta_task.h"
 #include "task_handles.h"
 
-#define VL0X_SDA 0
-#define VL0X_SCL 1
-#define I2C_PORT i2c0
-#define SENSOR_ADDR 0x29
+#define BUTTON_A 5
+#define BUTTON_B 6
 
 TaskHandle_t handle_tl_task         = NULL;
 TaskHandle_t handle_sensor_task     = NULL;
 TaskHandle_t handle_display_task    = NULL;
-TaskHandle_t handle_wifi_task       = NULL;
+TaskHandle_t handle_ap_task         = NULL;
+TaskHandle_t handle_sta_task        = NULL;
+
+void init_buttons(){
+
+  // Inicializa botão A com pull_up:
+  gpio_init(BUTTON_A);
+  gpio_set_dir(BUTTON_A, GPIO_IN);
+  gpio_pull_up(BUTTON_A);
+
+  // Inicializa botão B com pull_up:
+  gpio_init(BUTTON_B);
+  gpio_set_dir(BUTTON_B, GPIO_IN);
+  gpio_pull_up(BUTTON_B);
+
+}
 
 int main() {
 
+    bool button_pressed = 0;
+
     stdio_init_all();
+
+    init_buttons();
+
+    while (1)
+    {
+        if(!gpio_get(BUTTON_A))
+        {
+            xTaskCreate(ap_task, "Access Point", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_ap_task);
+            break;
+        }
+        else if(!gpio_get(BUTTON_B))
+        {
+            xTaskCreate(sta_task, "Station", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_sta_task);
+            break;
+        }
+    }
 
     xTaskCreate(traffic_lights_task, "Traffic Lights", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_tl_task);
     xTaskCreate(sensor_task, "Presence Sensor", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_sensor_task);
     xTaskCreate(display_task, "Display", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_display_task);
-    xTaskCreate(wifi_task, "WIFI", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_wifi_task);
 
     vTaskStartScheduler();
 

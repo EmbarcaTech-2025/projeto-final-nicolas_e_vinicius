@@ -44,7 +44,8 @@ add_executable(${ProjectName}
    tasks/traffic_lights_task.c
    tasks/sensor_task.c
    tasks/display_task.c
-   tasks/wifi_task.c
+   tasks/ap_task.c
+   tasks/sta_task.c
 )
  
 pico_generate_pio_header(smart_light ${CMAKE_CURRENT_LIST_DIR}/utilities/include/ws2812b.pio)
@@ -81,7 +82,11 @@ target_link_libraries(${ProjectName}
    hardware_pio
    hardware_clocks
    pico_cyw43_arch_lwip_threadsafe_background
-   )
+)
+
+pico_configure_ip4_address(${ProjectName} PRIVATE
+   CYW43_DEFAULT_IP_AP_ADDRESS 192.168.4.1
+)
 
 pico_add_extra_outputs(${ProjectName})
 

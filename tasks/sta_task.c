@@ -5,17 +5,21 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "pico/cyw43_arch.h"
+#include "lwip/pbuf.h"
+#include "lwip/tcp.h"
 #include "traffic_lights_task.h"
 #include "neopixel.h"
 #include "traffic_light_control.h"
 #include "display_task.h"
 
-const char WIFI_SSID[] = "M34 de Vinícius";
-const char WIFI_PASSWORD[] = "abacate12301";
+const char WIFI_SSID[] = "RP_AP";
+const char WIFI_PASSWORD[] = "Smart_Crossing";
 
-void wifi_task(void *params)
+void sta_task(void *params)
 {
+
     vTaskDelay(pdMS_TO_TICKS(3000));
+    
     if (cyw43_arch_init()) {
         printf("Wi-Fi init failed\n");
     }
