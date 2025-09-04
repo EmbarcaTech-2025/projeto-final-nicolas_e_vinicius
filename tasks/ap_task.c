@@ -11,6 +11,7 @@
 #include "neopixel.h"
 #include "traffic_light_control.h"
 #include "display_task.h"
+#include "dhcp_server.h"
 
 const char *AP_NAME = "RP_AP";
 const char *AP_PASS = "Smart_Crossing";
@@ -25,9 +26,17 @@ void ap_task(void *params)
 
     cyw43_arch_enable_ap_mode(AP_NAME, AP_PASS, CYW43_AUTH_WPA2_AES_PSK);
 
+    ip4_addr_t mask;
+    ip_addr_t ap_ip;
+
+    ap_ip.addr = PP_HTONL(CYW43_DEFAULT_IP_AP_ADDRESS);
+    mask.addr = PP_HTONL(CYW43_DEFAULT_IP_MASK);
+
+    dhcp_server_t dhcp_server;
+    dhcp_server_init(&dhcp_server, &ap_ip, &mask);
+
     while(1)
     {
-        cyw43_arch_poll();
         vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
