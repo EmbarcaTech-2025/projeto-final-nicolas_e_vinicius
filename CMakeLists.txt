@@ -39,6 +39,7 @@ add_executable(${ProjectName}
    utilities/neopixel.c
    utilities/ssd1306.c
    utilities/dhcp_server.c
+   utilities/udp_receive.c
    utilities/traffic_light_control.c
    utilities/cpp_vl53l0x/VL53L0X.cpp
    utilities/cpp_vl53l0x/vl53l0x_wrapper.cpp

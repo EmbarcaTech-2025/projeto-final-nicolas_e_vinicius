@@ -6,11 +6,16 @@
 #include "task.h"
 #include "pico/cyw43_arch.h"
 #include "lwip/pbuf.h"
-#include "lwip/tcp.h"
+#include "lwip/udp.h"
 #include "traffic_lights_task.h"
 #include "neopixel.h"
 #include "traffic_light_control.h"
 #include "display_task.h"
+#include "udp_receive.h"
+
+#define UDP_PORT 4444
+
+#define AP_IP "192.168.4.1"
 
 const char WIFI_SSID[] = "RP_AP";
 const char WIFI_PASSWORD[] = "Smart_Crossing";
@@ -37,10 +42,25 @@ void sta_task(void *params)
         printf("successfully connected\n");
     }
 
+    struct udp_pcb *udppcb;
+    udppcb = udp_new();
+    udp_bind(udppcb, IP_ADDR_ANY, UDP_PORT); 
+    udp_recv(udppcb, udp_recv_function, NULL);
+    
+    // struct udp_pcb *pcb = udp_new();
+
+    // ip_addr_t ap_addr;
+    // ip4addr_aton(AP_IP, &ap_addr);
+    // udp_connect(pcb, &ap_addr, UDP_PORT);
+
+    // const char *message = "Hello from Station Pico!";
+
+    // struct pbuf *p = pbuf_alloc(PBUF_TRANSPORT, strlen(message), PBUF_RAM);
+
+    // pbuf_take(p, message, strlen(message));
+    // udp_send(pcb, p);
+
     while (true) {
-        cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-        vTaskDelay(pdMS_TO_TICKS(250));
-        cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-        vTaskDelay(pdMS_TO_TICKS(250));
+        vTaskDelay(pdMS_TO_TICKS(20));
     }
 }

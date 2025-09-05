@@ -6,12 +6,15 @@
 #include "task.h"
 #include "pico/cyw43_arch.h"
 #include "lwip/pbuf.h"
-#include "lwip/tcp.h"
+#include "lwip/udp.h"
 #include "traffic_lights_task.h"
 #include "neopixel.h"
 #include "traffic_light_control.h"
 #include "display_task.h"
 #include "dhcp_server.h"
+#include "udp_receive.h"
+
+#define UDP_PORT 4444
 
 const char *AP_NAME = "RP_AP";
 const char *AP_PASS = "Smart_Crossing";
@@ -34,6 +37,11 @@ void ap_task(void *params)
 
     dhcp_server_t dhcp_server;
     dhcp_server_init(&dhcp_server, &ap_ip, &mask);
+
+    struct udp_pcb *udppcb;
+    udppcb = udp_new();
+    udp_bind(udppcb, IP_ADDR_ANY, UDP_PORT); 
+    udp_recv(udppcb, udp_recv_function, NULL);
 
     while(1)
     {
