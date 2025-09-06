@@ -8,6 +8,8 @@
 #include "vl53l0x_wrapper.h"
 #include "sensor_task.h"
 #include "task_handles.h"
+#include "lwip/udp.h"
+#include "udp_util.h"
 
 #define VL0X_SDA 0
 #define VL0X_SCL 1
@@ -37,21 +39,27 @@ void sensor_task(void *params)
         return;
     }
     
+    uint16_t range = 0;
+
     while(1)
     {
-        uint16_t range = VL53L0X_readRangeSingleMillimeters(sensor);
-
-        if (VL53L0X_timeoutOccurred(sensor)) {
-            // printf("Timeout occurred\n");
-        } else {
-            // printf("Range: %u mm\n", range);
-            if(range < 1000)
-            {
-                xTaskNotifyGive(handle_tl_task);
+        if(xSemaphoreTake(sync_sensor, portMAX_DELAY) == pdTRUE)
+        {
+            range = VL53L0X_readRangeSingleMillimeters(sensor);
+    
+            if (VL53L0X_timeoutOccurred(sensor)) {
+    
+            } else {
+                if(range < 1000)
+                {
+                    xTaskNotifyGive (handle_tl_task);
+                    // udp_send_message(udppcb, PERSON_DETECTED);
+                }
             }
+    
+            xSemaphoreGive(sync_sensor);
+            vTaskDelay(pdMS_TO_TICKS(200));
         }
-
-        vTaskDelay(pdMS_TO_TICKS(200));
     }
 
     VL53L0X_destroy(sensor);

@@ -12,15 +12,16 @@
 #include "traffic_light_control.h"
 #include "display_task.h"
 #include "dhcp_server.h"
-#include "udp_receive.h"
-
-#define UDP_PORT 4444
+#include "udp_util.h"
 
 const char *AP_NAME = "RP_AP";
 const char *AP_PASS = "Smart_Crossing";
 
 void ap_task(void *params)
 {
+    sync_sensor = xSemaphoreCreateCounting(2, 0);
+    sync_light = xSemaphoreCreateCounting(2, 0);
+    
     vTaskDelay(pdMS_TO_TICKS(3000));
 
     if (cyw43_arch_init()) {
@@ -38,10 +39,7 @@ void ap_task(void *params)
     dhcp_server_t dhcp_server;
     dhcp_server_init(&dhcp_server, &ap_ip, &mask);
 
-    struct udp_pcb *udppcb;
-    udppcb = udp_new();
-    udp_bind(udppcb, IP_ADDR_ANY, UDP_PORT); 
-    udp_recv(udppcb, udp_recv_function, NULL);
+    udp_init_recv(&udppcb);
 
     while(1)
     {
