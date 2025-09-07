@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "udp_util.h"
+#include "task_handles.h"
 
 struct udp_pcb *udppcb = NULL;
 SemaphoreHandle_t sync_sensor;
@@ -50,14 +51,17 @@ void udp_recv_function(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_
 
         if(!strcmp(buffer, START))
         {
-            printf("start received\n");
             xSemaphoreGive(sync_light);
             xSemaphoreGive(sync_sensor);
             udp_send_message(udppcb, ACK);
         }
-        else if (!strcmp(buffer, ACK))
+        else if(!strcmp(buffer, ACK))
         {
-            printf("ack received\n");
+
+        }
+        else if(!strcmp(buffer, PERSON_DETECTED))
+        {
+            xTaskNotifyGive(handle_tl_task);
         }
 
         pbuf_free(p);

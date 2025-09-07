@@ -48,12 +48,16 @@ void sensor_task(void *params)
             range = VL53L0X_readRangeSingleMillimeters(sensor);
     
             if (VL53L0X_timeoutOccurred(sensor)) {
-    
+            
             } else {
-                if(range < 1000)
+                if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
                 {
-                    xTaskNotifyGive (handle_tl_task);
-                    // udp_send_message(udppcb, PERSON_DETECTED);
+                    vTaskDelay(pdMS_TO_TICKS(5));
+                    if(range < 1000)
+                    {
+                        udp_send_message(udppcb, PERSON_DETECTED);
+                        xTaskNotifyGive(handle_tl_task);
+                    }
                 }
             }
     

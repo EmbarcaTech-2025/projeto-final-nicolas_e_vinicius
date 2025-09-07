@@ -72,8 +72,8 @@ void VL53L0X::setAddress(uint8_t new_addr)
 // mode.
 bool VL53L0X::init(bool io_2v8)
 {
-    printf("model: ");
-    printf("%d\n", readReg(IDENTIFICATION_MODEL_ID));
+    // printf("model: ");
+    // printf("%d\n", readReg(IDENTIFICATION_MODEL_ID));
     // check model ID register (value specified in datasheet)
     if (readReg(IDENTIFICATION_MODEL_ID) != 0xEE)
     {

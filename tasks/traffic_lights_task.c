@@ -11,6 +11,7 @@
 #include "task.h"
 #include "semphr.h"
 #include "udp_util.h"
+#include "task_handles.h"
 
 uint8_t traffic_state;
 
@@ -58,6 +59,7 @@ void traffic_lights_task(void *params)
                     led_green_on(CAR);
                     np_write();
                     vTaskDelay(pdMS_TO_TICKS(TIME_TO_CLOSE_CAR_MIN));
+                    xTaskNotifyGive(handle_sensor_task);
                     ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(get_time_green(CAR)));
                     vTaskDelay(pdMS_TO_TICKS(TIME_TO_CLOSE_CAR_AFTER_PRESENCE));
                     traffic_state = CAR_YELLOW;
