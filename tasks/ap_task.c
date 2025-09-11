@@ -24,7 +24,7 @@ void ap_task(void *params)
     
     vTaskDelay(pdMS_TO_TICKS(3000));
 
-    if (cyw43_arch_init()) {
+    if (cyw43_arch_init_with_country(CYW43_COUNTRY_BRAZIL)) {
         printf("Failed to initialise cyw43\n");
     }
 
