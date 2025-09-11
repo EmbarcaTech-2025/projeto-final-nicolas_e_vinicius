@@ -10,6 +10,7 @@
 #include "display_task.h"
 #include "ap_task.h"
 #include "sta_task.h"
+#include "ble_task.h"
 #include "task_handles.h"
 
 #define BUTTON_A 5
@@ -20,6 +21,7 @@ TaskHandle_t handle_sensor_task     = NULL;
 TaskHandle_t handle_display_task    = NULL;
 TaskHandle_t handle_ap_task         = NULL;
 TaskHandle_t handle_sta_task        = NULL;
+TaskHandle_t handle_ble_task        = NULL;
 
 void init_buttons(){
 
@@ -60,6 +62,7 @@ int main() {
     xTaskCreate(traffic_lights_task, "Traffic Lights", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_tl_task);
     xTaskCreate(sensor_task, "Presence Sensor", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_sensor_task);
     xTaskCreate(display_task, "Display", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_display_task);
+    xTaskCreate(ble_task, "Bluetooth App", configMINIMAL_STACK_SIZE + 256, NULL, 1, &handle_ble_task);
 
     vTaskStartScheduler();
 

@@ -53,7 +53,7 @@ void sensor_task(void *params)
                 if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
                 {
                     vTaskDelay(pdMS_TO_TICKS(5));
-                    if(range < 1000)
+                    if(range < MAX_DIST_PEDESTER_DETECTION)
                     {
                         udp_send_message(udppcb, PERSON_DETECTED);
                         xTaskNotifyGive(handle_tl_task);
