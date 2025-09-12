@@ -4,8 +4,11 @@
 #include "pico/stdlib.h"         // Biblioteca principal do SDK do Raspberry Pi Pico.
 #include "pico/cyw43_arch.h"     // Biblioteca para controle do chip wireless (CYW43439) da Pico W.
 #include "btstack.h"             // Biblioteca principal da pilha de software Bluetooth (BTstack).
+#include "FreeRTOS.h"
+#include "task.h"
 
 void ble_task(void *params)
 {
+    vTaskDelay(pdMS_TO_TICKS(3000));
     init_ble_process();
 }

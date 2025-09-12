@@ -37,6 +37,7 @@ void traffic_lights_task(void *params)
                     vTaskDelay(pdMS_TO_TICKS(get_time_green(PEOPLE)));
                     traffic_state = PEOPLE_YELLOW;
                     time_stop();
+                    set_time_green(PEOPLE, TIME_GREEN_PEOPLE_DEFAULT);
                     break;
         
                 case PEOPLE_YELLOW:

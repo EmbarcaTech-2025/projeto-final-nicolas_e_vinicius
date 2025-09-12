@@ -8,6 +8,9 @@
 #include "pico/cyw43_arch.h"     // Biblioteca para controle do chip wireless (CYW43439) da Pico W.
 #include "btstack.h"             // Biblioteca principal da pilha de software Bluetooth (BTstack).
 #include "traffic_light_control.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
 // ====================================================================================
 // DEFINIÇÕES DE HARDWARE (LEDs)
 // ====================================================================================
@@ -171,7 +174,7 @@ static int att_write_callback(hci_con_handle_t connection_handle, uint16_t attri
     
     mobility_level = value; // Atualiza a variável global com o novo valor validado.
     printf("[GATT] Mobility level = %u (tempo=%us)\n", mobility_level, mobility_level * 5);
-    start_led_blink_green(mobility_level); // Inicia o feedback visual no LED verde.
+    // start_led_blink_green(mobility_level); // Inicia o feedback visual no LED verde.
     set_time_green(PEOPLE, get_time_green(PEOPLE) + (mobility_level * 5));
     return ATT_ERROR_SUCCESS; // Retorna sucesso.
 }
@@ -254,28 +257,45 @@ void init_ble_process(){
     gpio_init_output_low(BLUE_LED);
     gpio_init_output_low(RED_LED);
 
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     // Associa cada timer com sua respectiva função de callback (handler).
     btstack_run_loop_set_timer_handler(&led_timer_green, led_timer_handler_green);
     btstack_run_loop_set_timer_handler(&led_timer_blue,  led_timer_handler_blue);
     btstack_run_loop_set_timer_handler(&led_timer_red,   led_timer_handler_red);
 
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     // Inicializa as camadas da pilha Bluetooth.
     l2cap_init(); // Protocolo de multiplexação e adaptação da camada lógica.
+
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     sm_init();    // Gerenciador de Segurança (para pareamento).
-    
+
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     // Monta a nossa estrutura de serviços e características.
     create_gatt_database();
-    
+
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     // Inicializa o servidor ATT (Protocolo de Atributos) e registra nossos callbacks de leitura/escrita.
     att_server_init(att_db_util_get_address(), att_read_callback, att_write_callback);
+
+    vTaskDelay(pdMS_TO_TICKS(10));
 
     // Registra nossa função packet_handler para receber todos os eventos da camada HCI (Host Controller Interface).
     hci_event_callback_registration.callback = &packet_handler;
     hci_add_event_handler(&hci_event_callback_registration);
 
+    vTaskDelay(pdMS_TO_TICKS(10));
+
     // Liga o rádio Bluetooth.
     hci_power_control(HCI_POWER_ON);
     printf("Bluetooth initializing...\n");
+
+    vTaskDelay(pdMS_TO_TICKS(10));
 
     // Inicia o loop principal de eventos do BTstack. O programa fica "preso" nesta linha para sempre,
     // processando eventos de Bluetooth e de timers de forma assíncrona.
