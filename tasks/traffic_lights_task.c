@@ -12,6 +12,7 @@
 #include "semphr.h"
 #include "udp_util.h"
 #include "task_handles.h"
+#include "main.h"
 
 uint8_t traffic_state;
 
@@ -22,18 +23,28 @@ void traffic_lights_task(void *params)
     np_init(LED_PIN);
     traffic_state = PEOPLE_GREEN;
     vTaskDelay(pdMS_TO_TICKS(200));
-    led_red_on(CAR);
+
+    if(comm_side == AP_TASK)
+    {
+        clear_display();
+        led_red_on();
+        np_write();
+        write_in_display(10, 5, 2, "FECHADO!");
+    }
 
     while(1)
     {
         switch (traffic_state)
         {
             case PEOPLE_GREEN:
-                led_green_on(PEOPLE);
-                np_write();
-                clear_display();
+                if(comm_side == STA_TASK)
+                {
+                    led_green_on();
+                    np_write();
+                    clear_display();
+                    write_in_display(10, 5, 2, "ABERTO!");
+                }
                 // time_in_display();
-                write_in_display(10, 5, 2, "ABERTO!");
                 vTaskDelay(pdMS_TO_TICKS(get_time_green(PEOPLE)));
                 traffic_state = PEOPLE_YELLOW;
                 time_stop();
@@ -41,24 +52,35 @@ void traffic_lights_task(void *params)
     
             case PEOPLE_YELLOW:
                 set_time_green(PEOPLE, TIME_GREEN_PEOPLE_DEFAULT);
-                led_yellow_on(PEOPLE);
-                np_write();
+                if(comm_side == STA_TASK)
+                {
+                    led_yellow_on();
+                    np_write();
+                }
                 vTaskDelay(pdMS_TO_TICKS(YELLOW_TIME));
                 traffic_state = PEOPLE_RED;
                 break;
     
             case PEOPLE_RED:
-                led_red_on(PEOPLE);
-                np_write();
-                clear_display();
-                write_in_display(10, 10, 2, "FECHADO!");
+                if(comm_side == STA_TASK)
+                {
+                    led_red_on();
+                    np_write();
+                    clear_display();
+                    write_in_display(10, 10, 2, "FECHADO!");
+                }
                 vTaskDelay(pdMS_TO_TICKS(get_time_to_turn_green(CAR)));
                 traffic_state = CAR_GREEN;
                 break;
     
             case CAR_GREEN:
-                led_green_on(CAR);
-                np_write();
+                if(comm_side == AP_TASK)
+                {
+                    led_green_on();
+                    np_write();
+                    clear_display();
+                    write_in_display(10, 5, 2, "ABERTO!");
+                }            
                 vTaskDelay(pdMS_TO_TICKS(TIME_TO_CLOSE_CAR_MIN));
                 xTaskNotifyGive(handle_sensor_task);
                 ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(get_time_green(CAR)));
@@ -67,15 +89,23 @@ void traffic_lights_task(void *params)
                 break;
     
             case CAR_YELLOW:
-                led_yellow_on(CAR);
-                np_write();
+                if(comm_side == AP_TASK)
+                {
+                    led_yellow_on();
+                    np_write();
+                }   
                 vTaskDelay(pdMS_TO_TICKS(YELLOW_TIME));
                 traffic_state = CAR_RED;
                 break;
     
             case CAR_RED:
-                led_red_on(CAR);
-                np_write();
+                if(comm_side == AP_TASK)
+                {
+                    led_red_on();
+                    np_write();
+                    clear_display();
+                    write_in_display(10, 5, 2, "FECHADO!");
+                }   
                 vTaskDelay(pdMS_TO_TICKS(get_time_to_turn_green(PEOPLE)));
                 traffic_state = PEOPLE_GREEN;
                 break;

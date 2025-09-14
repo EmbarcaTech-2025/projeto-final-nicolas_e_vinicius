@@ -68,6 +68,8 @@ void sensor_task(void *params)
                     {
                         udp_send_message(udppcb, PERSON_DETECTED);
                         xTaskNotifyGive(handle_tl_task);
+                        begin_sensing = 0;
+                        break;
                     }
                     vTaskDelay(pdMS_TO_TICKS(100));
                 }
