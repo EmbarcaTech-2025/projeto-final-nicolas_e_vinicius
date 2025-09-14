@@ -10,6 +10,7 @@
 #include "traffic_light_control.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "udp_util.h"
 
 // ====================================================================================
 // DEFINIÇÕES DE HARDWARE (LEDs)
@@ -175,7 +176,10 @@ static int att_write_callback(hci_con_handle_t connection_handle, uint16_t attri
     mobility_level = value; // Atualiza a variável global com o novo valor validado.
     printf("[GATT] Mobility level = %u (tempo=%us)\n", mobility_level, mobility_level * 5);
     // start_led_blink_green(mobility_level); // Inicia o feedback visual no LED verde.
-    set_time_green(PEOPLE, get_time_green(PEOPLE) + (mobility_level * 5));
+    uint16_t time_send = TIME_GREEN_PEOPLE_DEFAULT + (mobility_level * 5000);
+    set_time_green(PEOPLE, time_send);
+    printf("Time set to: %d\n", time_send);
+    time_changed_ble = 1;
     return ATT_ERROR_SUCCESS; // Retorna sucesso.
 }
 

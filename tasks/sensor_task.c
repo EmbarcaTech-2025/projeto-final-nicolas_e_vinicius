@@ -10,6 +10,7 @@
 #include "task_handles.h"
 #include "lwip/udp.h"
 #include "udp_util.h"
+#include "traffic_light_control.h"
 
 #define VL0X_SDA 0
 #define VL0X_SCL 1
@@ -18,6 +19,8 @@
 
 void sensor_task(void *params)
 {
+    if(xSemaphoreTake(sync_sensor, portMAX_DELAY) == pdTRUE);
+
     i2c_init(I2C_PORT, 100 * 1000); // 100 kHz
     gpio_set_function(VL0X_SDA, GPIO_FUNC_I2C);
     gpio_set_function(VL0X_SCL, GPIO_FUNC_I2C);
@@ -40,30 +43,39 @@ void sensor_task(void *params)
     }
     
     uint16_t range = 0;
+    absolute_time_t begin_sensing = 0;
 
     while(1)
     {
-        if(xSemaphoreTake(sync_sensor, portMAX_DELAY) == pdTRUE)
-        {
-            range = VL53L0X_readRangeSingleMillimeters(sensor);
-    
-            if (VL53L0X_timeoutOccurred(sensor)) {
-            
-            } else {
-                if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
+        range = VL53L0X_readRangeSingleMillimeters(sensor);
+
+        if (VL53L0X_timeoutOccurred(sensor)) {
+        
+        } else {
+            if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
+            {
+                begin_sensing = get_absolute_time();
+                vTaskDelay(pdMS_TO_TICKS(5));
+
+                while(1)
                 {
-                    vTaskDelay(pdMS_TO_TICKS(5));
+                    if(get_absolute_time() - begin_sensing >= get_time_green(PEOPLE))
+                    {
+                        begin_sensing = 0;
+                        break;
+                    }
                     if(range < MAX_DIST_PEDESTER_DETECTION)
                     {
                         udp_send_message(udppcb, PERSON_DETECTED);
                         xTaskNotifyGive(handle_tl_task);
                     }
+                    vTaskDelay(pdMS_TO_TICKS(100));
                 }
             }
-    
-            xSemaphoreGive(sync_sensor);
-            vTaskDelay(pdMS_TO_TICKS(200));
         }
+
+        vTaskDelay(pdMS_TO_TICKS(200));
+
     }
 
     VL53L0X_destroy(sensor);

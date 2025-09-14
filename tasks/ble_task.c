@@ -6,9 +6,11 @@
 #include "btstack.h"             // Biblioteca principal da pilha de software Bluetooth (BTstack).
 #include "FreeRTOS.h"
 #include "task.h"
+#include "udp_util.h"
 
 void ble_task(void *params)
 {
-    vTaskDelay(pdMS_TO_TICKS(3000));
+    if(xSemaphoreTake(sync_ble, portMAX_DELAY) == pdTRUE);
+
     init_ble_process();
 }
