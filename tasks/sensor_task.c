@@ -43,23 +43,26 @@ void sensor_task(void *params)
     }
     
     uint16_t range = 0;
-    absolute_time_t begin_sensing = 0;
+    TickType_t begin_sensing = 0;
+    TickType_t timeout = 0;
 
     while(1)
     {
-        range = VL53L0X_readRangeSingleMillimeters(sensor);
+        if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
+        {
+            begin_sensing = xTaskGetTickCount();
+            timeout = pdMS_TO_TICKS(get_time_green(CAR));
+            
+            vTaskDelay(pdMS_TO_TICKS(5));
 
-        if (VL53L0X_timeoutOccurred(sensor)) {
-        
-        } else {
-            if(ulTaskNotifyTake(pdTRUE, portMAX_DELAY))
+            while(1)
             {
-                begin_sensing = get_absolute_time();
-                vTaskDelay(pdMS_TO_TICKS(5));
-
-                while(1)
-                {
-                    if(get_absolute_time() - begin_sensing >= get_time_green(PEOPLE))
+                range = VL53L0X_readRangeSingleMillimeters(sensor);
+        
+                if (VL53L0X_timeoutOccurred(sensor)) {
+                
+                } else {
+                    if(xTaskGetTickCount() - begin_sensing >= timeout)
                     {
                         begin_sensing = 0;
                         break;
@@ -75,7 +78,7 @@ void sensor_task(void *params)
                 }
             }
         }
-
+        
         vTaskDelay(pdMS_TO_TICKS(200));
 
     }

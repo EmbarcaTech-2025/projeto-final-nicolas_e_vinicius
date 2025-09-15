@@ -1,9 +1,9 @@
 #ifndef LED_STATE_H
 #define LED_STATE_H
 
-#define GREEN_LED_NUM                   12
-#define YELLOW_LED_NUM                  7
-#define RED_LED_NUM                     2
+#define GREEN_LED_NUM                   17
+#define YELLOW_LED_NUM                  12
+#define RED_LED_NUM                     7
 
 #define TIME_GREEN_PEOPLE_DEFAULT           10000
 #define TIME_GREEN_CAR_DEFAULT              10000
